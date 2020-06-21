@@ -10,6 +10,7 @@ import java.util.TreeSet;
  */
 public class Day01 {
     private static int count = 0;
+
     public static void main(String[] args) {
         new Day01().InversePairs(new int[]{1, 2, 3, 4, 5, 6, 7, 0});
         System.out.println(count);
