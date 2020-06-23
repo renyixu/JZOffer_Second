@@ -1,11 +1,17 @@
 package JzOffer_Second;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * @author 骑士逸
  * @version 1.0
  * @date 2020/6/22 9:39
  */
 public class Day02 {
+    private static List<Integer> num = new ArrayList<>();
+
     //    1题号：JZ32
     public String PrintMinNumber(int[] numbers) {
         if (numbers == null || numbers.length == 0)
@@ -91,6 +97,8 @@ public class Day02 {
         }
     }
 
+    //5题号:JZ6，本题略
+
     private int getFirstJiShuStartI(int[] array, int i) {
         for (int j = i + 1; j < array.length; ++j)
             if (array[j] % 2 != 0)
@@ -104,8 +112,6 @@ public class Day02 {
                 return i;
         return array.length;
     }
-
-    //5题号:JZ6，本题略
 
     //6题号:JZ1
     public boolean Find(int target, int[][] array) {
@@ -123,4 +129,5 @@ public class Day02 {
         }
         return false;
     }
+
 }
