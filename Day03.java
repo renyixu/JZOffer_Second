@@ -76,6 +76,7 @@ public class Day03 {
         num.clear();
         for (int j = n - 1; j >= 0; --j)
             num.add(list.get(j));
+        //递归
         xiPai(++i, k);
     }
 }
