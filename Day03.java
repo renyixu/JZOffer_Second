@@ -131,7 +131,7 @@ public class Day03 {
     }
 
     //4号题：JZ27
-    //字符串的排列（按照字典的顺序对一个自渡船序列进行排列）
+    //字符串的排列（按照字典的顺序对一个自渡序列进行排列）
     //相当于全排列
     public ArrayList<String> Permutation(String str) {
         if ("".equals(str) || str == null || str.length() == 0)
