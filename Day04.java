@@ -1,5 +1,7 @@
 package JzOffer_Second;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Collections;
 import java.util.LinkedList;
 
@@ -9,10 +11,17 @@ import java.util.LinkedList;
  * @date 2020/7/11 20:09
  */
 public class Day04 {
-    public static void main(String[] args) {
-        System.out.println(new Day04().cutRope(8));
-    }
     private LinkedList<Integer> list = new LinkedList<>();
+
+    public static void main(String[] args) {
+//        System.out.println(new Day04().cutRope(8));
+        File file = new File("G:\\abcd.jpg");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     //排序
     //1号题：JZ63
